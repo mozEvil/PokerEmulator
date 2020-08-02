@@ -591,6 +591,7 @@ public class Table {
                     payoutChipsToPlayerFromPot(winSize, player, pot);
                     player.setWinSize(winSize);
                     notifyAndWait(mills*2);
+                    //todo показать карты победителя
                 }
             }
 

@@ -15,6 +15,7 @@ public class GameFactory {
     public static Game createGame() {
 
         Table table = TableFactory.createTable();
+//        Table table = TableFactory.createTableAllHeroes();
 
         Rules rules = new DefaultRules(table);
 

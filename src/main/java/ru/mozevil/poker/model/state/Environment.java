@@ -236,14 +236,12 @@ public class Environment {
     }
 
     private int getPreLastBet() {
-        int value = table.getActivePlayers().stream()
+        return table.getActivePlayers().stream()
                 .flatMap(p -> Stream.of(p.getValueChipsInPotOnThisStreet(getStreet())))
                 .sorted(Comparator.reverseOrder())
                 .flatMapToInt(IntStream::of)
                 .distinct().skip(1)
                 .findFirst().orElse(0);
-
-        return value;
     }
 
     // максимальная ставка на этой улице

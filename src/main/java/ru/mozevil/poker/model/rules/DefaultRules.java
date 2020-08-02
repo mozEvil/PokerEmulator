@@ -21,7 +21,7 @@ public class DefaultRules extends AbstractRules {
     private void init() {
 
         startStack = 10000;
-        span = 5;
+        span = 60;
 
         blinds = new HashMap<>();
         blinds.put(0, new Blinds(0, 100, 200));
