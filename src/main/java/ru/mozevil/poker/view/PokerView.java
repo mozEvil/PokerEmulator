@@ -22,7 +22,7 @@ public class PokerView extends JFrame implements View {
     private HandleView handleView;
 
     public PokerView() throws HeadlessException { // observer mode
-        super("Poker emulator by mozEvil");
+        super("Texas Holdem tournament by mozEvil");
 
         init();
 
@@ -30,7 +30,7 @@ public class PokerView extends JFrame implements View {
     }
 
     public PokerView(Player hero) throws HeadlessException { // play for hero mode
-        super("Poker emulator by mozEvil");
+        super("Texas Holdem tournament by mozEvil");
 
         init();
 
