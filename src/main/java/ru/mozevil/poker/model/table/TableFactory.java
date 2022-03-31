@@ -10,7 +10,7 @@ public class TableFactory {
         Table table = new Table();
 
         table.setSleepTime(400);
-        table.setGodMode(true);
+//        table.setGodMode(true);
 
         table.addPlayer(PlayerFactory.createHero());
 //        table.addPlayer(PlayerFactory.createBotFifty());
